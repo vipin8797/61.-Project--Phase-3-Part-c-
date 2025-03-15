@@ -146,7 +146,7 @@ app.use((err, req, res, next) => {
 const port = 3000;
 main().then(() => {
     console.log(`connectd to: ${DB} DB`);
-    app.listen(port, () => {
+    app.listen(port,"0.0.0.0",  () => {
         console.log(`listening at port ${port}`);
         
         
